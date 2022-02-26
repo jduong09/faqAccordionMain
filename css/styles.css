@@ -21,8 +21,16 @@ h1 {
 }
 
 .faq-question {
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq-question:first-of-type {
+  padding-top: 0;
 }
 
 .faq-question > input[id*="btnControl"] {
@@ -31,6 +39,8 @@ h1 {
 
 strong {
   display: inline-block;
+  width: 85%;
+  font-size: 0.8rem;
 }
 
 .faq-question > input[id*="btnControl"]:checked + label {
