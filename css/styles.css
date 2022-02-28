@@ -6,18 +6,44 @@ body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
+  position: relative;
 }
 
 main {
   width: 90%;
   margin: auto;
   border: 1px solid white;
-  background-color: white;;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#header-logo {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: -34% auto 0 auto;
+}
+
+#header-bg {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: -24% auto .8rem auto;
 }
 
 h1 {
   font-weight: 700;
   text-align: center;
+  font-size: 32px;
+  padding: 1.2rem 0;
+}
+
+.faq-accordion {
+  padding: .8rem 1rem 3rem 1rem;
 }
 
 .faq-question {
@@ -27,28 +53,40 @@ h1 {
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 1px solid hsl(240, 5%, 91%);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .faq-question > input[id*="btnControl"] {
   display: none;
 }
 
-strong {
+.btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h2 {
   display: inline-block;
   width: 85%;
   font-size: 0.8rem;
+  color: hsl(238, 29%, 16%);
 }
 
-.faq-question > input[id*="btnControl"]:checked + label {
-  display: inline;
+.faq-question > div {
+  display: none;
+  height: 0;
+  font-size: 12px;
+  color:hsl(238, 29%, 16%);
 }
 
 input[id*="btnControl"]:checked + label + div {
   display: block;
   height: auto;
+  padding-top: .75rem;
+}
+
+input[id*="btnControl"]:checked + label > h2 {
+  font-weight: 700;
 }
 
 input[id*="btnControl"]:checked + label > div {
@@ -60,27 +98,12 @@ input[id*="btnControl"]:checked + label > img {
   transform: rotate(180deg);
 }
 
-.btn {
-  display: inline-block;
-  height: auto;
-}
-
 .btn > img {
-  width: 15px;
-  height: auto;
+  width: 10px;
+  height: 7px;
+  align-self: center;
 }
 
-.btn > div {
-  display: none;
-  height: 0;
-}
+@media (min-width: 376px) {
 
-.faq-question > div {
-  display: none;
-  height: 0;
-}
-
-.faq-question > img {
-  width: 15px; 
-  height: auto;
 }
