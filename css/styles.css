@@ -104,6 +104,46 @@ input[id*="btnControl"]:checked + label > img {
   align-self: center;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 600px) {
+  #header-logo {
+    width: 60%;
+    margin-top: -27%;
+  }
 
+  #header-bg {
+    width: 60%;
+    margin-top: -20%;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    padding: .6rem 0;
+  }
+
+  .faq-accordion {
+    padding: .8rem .3rem 2.4rem .3rem;
+  }
+
+  .faq-question {
+    width: 95%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    overflow: hidden;
+  }
+
+  #header-logo {
+    display: none;
+  }
+
+  #header-bg {
+    content: url('../images/bg-pattern-desktop.svg');
+    width: 50%;
+    margin-left: -25%;
+    margin-bottom: -15%;
+  }
 }
