@@ -143,7 +143,7 @@ input[id*="btnControl"]:checked + label > img {
   main {
     display: flex;
     width: 70%;
-    height: 37rem;
+    height: auto;
   }
 
   #header-box {
@@ -196,6 +196,7 @@ input[id*="btnControl"]:checked + label > img {
   }
 
   .faq-question {
+    padding: 1.5rem 0;
     margin: 0;
   }
 }
