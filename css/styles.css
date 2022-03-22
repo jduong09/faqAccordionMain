@@ -21,6 +21,7 @@ body {
   border-radius: 20px;
   transform: translateY(27%);
   margin: auto;
+  box-shadow: 0 4px 6px -6px #222;
 }
 
 .header-container {
@@ -135,11 +136,14 @@ input[id*="btnControl"]:checked + label > img {
   }
 }
 
-@media (min-width: 1444px) {
+@media (min-width: 1000px) {
   .card {
     display: flex;
-    width: 70%;
+    width: 60%;
     height: auto;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: 100% auto;
+    background-position: -100% 60%;
   }
 
   #header-box {
@@ -155,26 +159,10 @@ input[id*="btnControl"]:checked + label > img {
     width: 50%;
     position: relative;
     overflow: hidden;
-    z-index: -1;
   }
 
-  #header-logo {
+  #header-women-illustration {
     content: url('../images/illustration-woman-online-desktop.svg');
-    width: 110%;
-    position: absolute;
-    top: 12%;
-    left: -20%;
-    margin: 0;
-  }
-
-  #header-bg {
-    content: url('../images/bg-pattern-desktop.svg');
-    width: 220%;
-    position: absolute;
-    left: -130%;
-    top: -55%;
-    margin: 0;
-    z-index: -1;
   }
 
   .faq-information {
