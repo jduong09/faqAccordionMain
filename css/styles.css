@@ -6,6 +6,9 @@ body {
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
+}
+
+main {
   position: relative;
 }
 
@@ -139,11 +142,14 @@ input[id*="btnControl"]:checked + label > img {
 @media (min-width: 1000px) {
   .card {
     display: flex;
-    width: 60%;
-    height: auto;
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: url('../images/bg-pattern-desktop.svg');
-    background-size: 100% auto;
-    background-position: -100% 60%;
+    background-size: 90%;
+    background-position: -485% 70%;
   }
 
   #header-box {
@@ -159,10 +165,16 @@ input[id*="btnControl"]:checked + label > img {
     width: 50%;
     position: relative;
     overflow: hidden;
+    left: 0;
+    transform: none;
   }
 
   #header-women-illustration {
     content: url('../images/illustration-woman-online-desktop.svg');
+    position: relative;
+    left: -17.5%;
+    transform: translateY(20%);
+    z-index: -2;
   }
 
   .faq-information {
@@ -172,7 +184,7 @@ input[id*="btnControl"]:checked + label > img {
 
   h1 {
     text-align: left;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .faq-accordion {
