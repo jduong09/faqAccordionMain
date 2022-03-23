@@ -73,7 +73,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-h2 {
+span {
   display: inline-block;
   width: 85%;
   font-size: 0.8rem;
@@ -94,7 +94,7 @@ input[id*="btnControl"]:checked + label + div {
   width: 85%;
 }
 
-input[id*="btnControl"]:checked + label > h2 {
+input[id*="btnControl"]:checked + label > span {
   font-weight: 700;
 }
 
